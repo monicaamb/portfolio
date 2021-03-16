@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Mimi Shop</title>
+    <link rel="icon" type="image/png" href="img/necklace.png">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Mónica">
+    <meta name="generator" content="Clojure">
+    <meta name="keywords" content="mimi, shop, joyeria">
+    <meta property="og:title" content="Joyería Mimi">
+    <meta property="og:type" content="website">
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.5.0/dist/ffnm.min.js" integrity="sha384-qlI8XJcMcJMh52x4w9HA9ItB8KmW6pKaJXijVQFl6UvT1nGCH+U6Y7sbbc11HkCH" crossorigin="anonymous"></script>
+    <!-- End JavaScript -->
+    <!-- CSS -->
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 600px)">
+    <!-- End CSS -->
+</head>
+<body>
+    <div class="home">
+        <main class="main">
+            <h1 class="main__titulo">Mimi Shop</h1><img class="main__icon" src="img/necklace.png" alt="collar-logo">
+            <section class="productos">
+                <article class="producto">
+                    <img src="img/imagen1.jpg" alt="collar" class="producto__previa">
+                    <h2 class="producto__titulo">Collar de cadena</h2>
+                    <p class="producto__precio">54€</p>
+                </article>
+                <article class="producto">
+                    <img src="img/imagen2.jpg" alt="pendientes" class="producto__previa">
+                    <h2 class="producto__titulo">Pendientes de aro</h2>
+                    <p class="producto__precio">34€</p>
+                </article>
+                <article class="producto">
+                    <img src="img/imagen3.jpg" alt="pulsera" class="producto__previa">
+                    <h2 class="producto__titulo">Pulsera encadenada</h2>
+                    <p class="producto__precio">65€</p>
+                </article>
+                <article class="producto">
+                    <img src="img/imagen4.jpg" alt="anillo" class="producto__previa">
+                    <h2 class="producto__titulo">Anillo con adorno</h2>
+                    <p class="producto__precio">43€</p>
+                </article>
+                <article class="producto">
+                    <img src="img/imagen5.jpg" alt="pulsera" class="producto__previa">
+                    <h2 class="producto__titulo">Pulsera Mimi</h2>
+                    <p class="producto__precio">87€</p>
+                </article>
+                <article class="producto">
+                    <img src="img/imagen6.jpg" alt="anillo" class="producto__previa">
+                    <h2 class="producto__titulo">Anillo Lux</h2>
+                    <p class="producto__precio">60€</p>
+                </article>
+                <article class="producto">
+                    <img src="img/imagen7.jpg" alt="pendientes" class="producto__previa">
+                    <h2 class="producto__titulo">Pendientes Requiem</h2>
+                    <p class="producto__precio">46€</p>
+                </article>
+                <article class="producto">
+                    <img src="img/imagen8.jpg" alt="anillo" class="producto__previa">
+                    <h2 class="producto__titulo">Anillo Bin</h2>
+                    <p class="producto__precio">129€</p>
+                </article>
+                <article class="producto">
+                    <img src="img/imagen9.jpg" alt="anillo" class="producto__previa">
+                    <h2 class="producto__titulo">Anillo Dorian</h2>
+                    <p class="producto__precio">85€</p>
+                </article>
+            </section>
+        </main>
+        <aside class="carrito" is-scroll-down="class:remove('show')" is-scroll-up="class:add('show')">
+            <button class="carrito__ver-todo" is-click="class:toggle('show', '#carrito-productos')">Ver todo</button><p class="carrito__total-texto-movil">Total: 389€</p>
+            <section class="productos" id="carrito-productos">
+                <h2 class="productos__titulo">Carrito</h2>
+                <ul class="productos__lista">
+                    <li class="productos__elemento">
+                        <span class="productos__texto">
+                            Collar de cadena......................54€
+                        </span>
+                    </li>
+                    <li class="productos__elemento">
+                        <span class="productos__texto">
+                            Pendientes de aro....................34€
+                        </span>
+                    </li>
+                    <li class="productos__elemento">
+                        <span class="productos__texto">
+                            Pulsera Mimi................................87€
+                        </span>
+                    </li>
+                    <li class="productos__elemento">
+                        <span class="productos__texto">
+                            Anillo Bin.......................................129€
+                        </span>
+                    </li>
+                    <li class="productos__elemento">
+                        <span class="productos__texto">
+                            Anillo Dorian.................................85€
+                        </span>
+                    </li>
+                </ul>
+                <p class="carrito__total-texto">
+                    Total: 389€
+                </p>
+            </section>
+        </aside>
+    </div>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evernote</title>
+    <link rel="icon" type="image/png" href="img/evernote.png">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+    <a href="" class="header__logo">
+        <img src="img/evernote.png" alt="logo" class="header__logo-img">
+    </a>
+    <!-- nav.nav>ul.nav__ul>li.nav__item*4>a[href=#].nav__link>lorem1 -->
+    <nav class="nav" id="nav">
+        <button class="nav__cerrar" is-click="class:remove('active', '#nav')">
+            <img src="img/times-solid.svg" alt="boton-cerrar-menu" class="nav__cerrar-img">
+        </button>
+        <ul class="nav__ul">
+            <li class="nav__item">
+                <a href="#" class="nav__link">Inicio</a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">Valores</a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">Empresas</a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <button class="header__abrir-menu" is-click="class:add('active', '#nav')">
+        <img src="img/flechita.svg" alt="boton-abrir-menu" class="header__abrir-icono">
+    </button>
+</header>
+<main class="main">
+    <section class="landing">
+        <div class="container">
+            <div class="landing__textos">
+                <h1 class="landing__titulo"><br>Siéntete</br>organizado sin <br>esfuerzo</br></h1>
+                <p class="landing__texto">
+                    Evernote te ayuda a capturar y establecer la <br class="landing__br">prioridad de las ideas, proyectos y listas de <br class="landing__br">tareas, para que nada se te pase por alto.</br>
+                </p>
+                <p>
+                    <a href="#" class="landing__button">Regístrate de forma gratuita</a>
+                </p>
+            </div>
+            <img src="img/landing.png" alt="ordenador" class="landing__img">
+        </div>
+    </section>
+    <section class="centrate">
+        <div class="container">
+            <img src="img/cabecita.png" alt="cabeza" class="centrate__cabeza">
+            <h1 class="centrate__titulo">Céntrate en lo que más importa</h1>
+            <div class="centrate__textos">
+                <!-- p.centrate__texto*3>lorem10 -->
+                <p class="centrate__texto">Lorem ipsum dolor sit amet, otre consectetur adipisicing elit. Fuga, harum!</p>
+                <p class="centrate__texto">Beatae ducimus eius error expedita illo labore sit unde vitae?</p>
+                <p class="centrate__texto">Dolorum eveniet expedita labore, odit optio pariatur quo sapiente sint?</p>
+             </div>
+        </div>
+    </section>
+    <section class="escalera">
+        <div class="container">
+            <img src="img/stairs.png" alt="escaleras" class="escalera__img">
+            <div class="escalera__textos">
+            <h1 class="escalera__titulo">En el trabajo, en casa y en todas partes</h1>
+            <p class="escalera__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consectetur delectus fuga repellat?</p>
+            </div>
+        </div>
+    </section>
+    <section class="valores">
+        <div class="container">
+            <!-- Fila cerebro -->
+            <div class="valores__fila">
+                <div class="valores__textos">
+                    <h2 class="valores__titulo">Recuerda todo lo importante</h2>
+                    <p class="valores__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt!</p>
+                    <p class="valores__enlace-contenedor">
+                        <a href="" class="valores__enlace">Evernote Basic</a>
+                    </p>
+                </div>
+                <div class="valores__imagen-contenedor">
+                <img src="img/cerebrito.PNG" alt="cerebro" class="valores__img">
+                </div>
+            </div>
+            <!-- End Fila cerebro -->
+            <!-- Fila ordenador -->
+            <div class="valores__fila valores__fila--invertido">
+                <div class="valores__textos">
+                    <h2 class="valores__titulo">Recuerda todo lo importante</h2>
+                    <p class="valores__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt!</p>
+                    <p class="valores__enlace-contenedor">
+                        <a href="" class="valores__enlace">Evernote Basic</a>
+                    </p>
+                </div>
+                <div class="valores__imagen-contenedor">
+                    <img src="img/ordenata-removebg-preview.png" alt="ordenador" class="valores__imagen">
+                </div>
+            </div>
+            <!-- End Fila ordenador -->
+            <!-- Fila filosofos -->
+            <div class="valores__fila">
+                <div class="valores__textos">
+                    <h2 class="valores__titulo">Recuerda todo lo importante</h2>
+                    <p class="valores__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt!</p>
+                    <p class="valores__enlace-contenedor">
+                        <a href="" class="valores__enlace">Evernote Basic</a>
+                    </p>
+                </div>
+                <div class="valores__imagen-contenedor">
+                    <img src="img/filosofos-removebg-preview.png" alt="cabezas" class="valores__imagen">
+                </div>
+            </div>
+            <!-- End Fila filosofos -->
+            <p class="valores__button">
+                <a href="#" class="valores__link">Comparar planes Evernote</a>
+            </p>
+        </div>
+    </section>
+    <p class="empresas__icono">
+        <img src="img/heart.PNG" alt="corazon" class="empresas__corazon">
+    </p>
+    <section class="empresas">
+        <div class="empresas__marcas">
+            <img src="img/businessdotcom.jpg" alt="logo-businessdotcom" class="empresas__imagenes">
+            <img src="img/the-verge-vector-logo.png" alt="logo-the_verge" class="empresas__imagenes">
+            <img src="img/Webby_Logo.png" alt="logo-webby" class="empresas__imagenes">
+            <img src="img/forbes-logo.jpg" alt="logo-forbes" class="empresas__imagenes">
+            <img src="img/thecloudlogo1.jpg" alt="logo-the_cloud" class="empresas__imagenes">
+            <img src="img/manual.png" alt="logo-the_manual" class="empresas__imagenes">
+        </div>
+        <p class="empresas__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae blanditiis enim impedit iusto sed!</p>
+    </section>
+    <section class="funciona">
+        <div class="container">
+            <h1 class="funciona__titulo">Cómo funciona</h1>
+            <div class="funciona__items">
+                <div class="funciona__imagenes">
+                    <img src="img/elefante-removebg-preview.png" alt="elefante" class="funciona__img">
+                    <h2 class="funciona__titulillos">Regístrate</h2>
+                    <p class="funciona__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, earum eum laboriosam suscipit tempora voluptatum!</p>
+                </div>
+                <div class="funciona__imagenes">
+                    <img src="img/notita-removebg-preview.png" alt="nota" class="funciona__img">
+                    <h2 class="funciona__titulillos">Añade contenido</h2>
+                    <p class="funciona__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, earum eum laboriosam suscipit tempora voluptatum!</p>
+                </div>
+                <div class="funciona__imagenes">
+                    <img src="img/lupilla-removebg-preview.png" alt="lupa" class="funciona__img">
+                    <h2 class="funciona__titulillos">Encuéntralo todo</h2>
+                    <p class="funciona__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, earum eum laboriosam suscipit tempora voluptatum!</p>
+                </div>
+                <div class="funciona__imagenes">
+                    <img src="img/tick-removebg-preview.png" alt="tick" class="funciona__img">
+                    <h2 class="funciona__titulillos">Encuéntralo todo</h2>
+                    <p class="funciona__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, earum eum laboriosam suscipit tempora voluptatum!</p>
+                </div>
+            </div>
+                <p class="funciona__button">
+                    <a href="#" class="funciona__link">Inicia tu prueba gratuita</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="funciones">
+        <div class="container">
+            <h1 class="funciones__titulo">Funciones populares</h1>
+            <div class="funciones__items">
+                <div class="funciones__item">
+                    <img src="img/Captura1.PNG" alt="ordenador" class="funciones__img">
+                    <p class="funciones__texto">Webclipper</p>
+                </div>
+                <div class="funciones__item">
+                    <img src="img/Captura2.PNG" alt="flechas" class="funciones__img">
+                    <p class="funciones__texto">Sincronización en varios dispositivos</p>
+                </div>
+                <div class="funciones__item">
+                    <img src="img/Captura3.PNG" alt="anotacion" class="funciones__img">
+                    <p class="funciones__texto">Búsqueda de texto escrito a mano</p>
+                </div>
+                <div class="funciones__item">
+                    <img src="img/Captura4.PNG" alt="hoja" class="funciones__img">
+                    <p class="funciones__texto">Libretas y etiquetas</p>
+                </div>
+                <div class="funciones__item">
+                    <img src="img/Captura5.PNG" alt="escaneo" class="funciones__img">
+                    <p class="funciones__texto">Escaneo de documentos</p>
+                </div>
+                <div class="funciones__item">
+                    <img src="img/lupa.PNG" alt="documentos" class="funciones__img">
+                    <p class="funciones__texto">Búsqueda de documentos y archivos PDF</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="registro">
+        <div class="container">
+            <div class="registro__intro">
+                <h1 class="registro__titulo">Regístrate en Evernote hoy</h1>
+                <p class="registro__texto">Captura ideas e inspiración desde cualquier<br>lugar y gestiona tareas con facilidad.</br></p>
+            </div>
+            <div class="registro__datos">
+                <div>
+                    <a href="#" class="registro__link registro__link--google">Regístrate gratis con Google</a>
+                </div>
+
+                <div class="registro__bien">o bien</div>
+                <form>
+                    <p>
+                        <label>
+                            <input type="email" class="registro__email" name="correo">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="password" class="registro__password" name="contraseña">
+                        </label>
+                    </p>
+                </form>
+                <p class="registro__politica">Al hacer clic a continuación, acepto los <span class="registro__negrita">Términos de servicio</span> <br>y la <span class="registro__negrita">Política de privacidad.</span></p></br>
+                <p>
+                    <a href="" class="registro__enlace">Regístrate de forma gratuita</a>
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <img src="img/logo-horizontal-removebg-preview.png" alt="evernote" class="footer__logo">
+        <hr class="footer__linea">
+        <div class="footer__submenus">
+            <div class="submenu">
+                <h3 class="submenu__titulo">Producto</h3>
+                <nav class="submenu__nav">
+                    <ul class="submenu__ul">
+                    <!-- li.submenu__li*7>a.submenu__link[href=#]>lorem1 -->
+                    <li class="submenu__li"><a href="#" class="submenu__link">¿Por qué Evernote?</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Evernote Basic</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Evernote Premium</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Evernote Business</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Compara planes</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Descuento para estudiantes</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Descargar la aplicación</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="submenu">
+            <h3 class="submenu__titulo">Funciones</h3>
+            <nav class="submenu__nav">
+                <ul class="submenu__ul">
+                    <!-- li.submenu__li*7>a.submenu__link[href=#]>lorem1 -->
+                    <li class="submenu__li"><a href="#" class="submenu__link">Web Clipper</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Plantillas</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Espacios</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Integraciones</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Sincronización de notas</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Búsqueda de documentos y PDF</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Búsqueda de texto escrito a mano</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Escaneo de Documentos</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Libretas y etiquetas</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="submenu">
+            <h3 class="submenu__titulo">Comunidad</h3>
+            <nav class="submenu__nav">
+                <ul class="submenu__ul">
+                    <!-- li.submenu__li*7>a.submenu__link[href=#]>lorem1 -->
+                    <li class="submenu__li"><a href="#" class="submenu__link">Nuestra comunidad</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Consultores certificados</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Desarroladores</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Eventos</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Foro</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="submenu">
+            <h3 class="submenu__titulo">Asistencia</h3>
+            <nav class="submenu__nav">
+                <ul class="submenu__ul">
+                    <!-- li.submenu__li*7>a.submenu__link[href=#]>lorem1 -->
+                    <li class="submenu__li"><a href="#" class="submenu__link">Ayuda y Aprendizaje</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Resolución de problemas</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="submenu">
+            <h3 class="submenu__titulo">Empresa</h3>
+            <nav class="submenu__nav">
+                <ul class="submenu__ul">
+                    <!-- li.submenu__li*7>a.submenu__link[href=#]>lorem1 -->
+                    <li class="submenu__li"><a href="#" class="submenu__link">Acerca de nosotros</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Prensa</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Oportunidades laborales</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Inclusión y diversidad</a></li>
+                    <li class="submenu__li"><a href="#" class="submenu__link">Ponte en contacto con nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__login-registro">
+            <p>
+                <a href="#" class="footer__login-registro-link">Regístrate</a> o <a href="#" class="footer__login-registro-link footer__login-registro-link--cuadradro">Iniciar sesión</a>
+            </p>
+        </div>
+    </div>
+    <div class="footer__idioma-redes">
+        <div class="footer__idioma-redes-selector">
+            <label class="footer__select-label">
+                Selecciona tu idioma
+            <select name="idioma" class="footer__select">
+                <option value="0">Spanish</option>
+                <option value="1">English</option>
+                <option value="2">Català</option>
+            </select>
+            </label>
+        </div>
+        <div class="footer__idioma-redes-enlaces">
+            <nav class="footer__idioma-redes-nav">
+                <!-- ul.footer__idioma-redes-ul>li.footer__idioma-redes-li*2>a.footer__idioma-redes-link[href="#"]>lorem1 -->
+                <ul class="footer__idioma-redes-ul">
+                    <li class="footer__idioma-redes-li">
+                        <a href="#" class="footer__idioma-redes-link">
+                            <img src="img/facebook-f-brands.svg" alt="facebook" class="footer__idioma-redes-link-imagen">
+                        </a>
+                    </li>
+                    <li class="footer__idioma-redes-li">
+                        <a href="#" class="footer__idioma-redes-link">
+                            <img src="img/mastodon-brands.svg" alt="mastodon" class="footer__idioma-redes-link-imagen">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <hr class="footer__linea-gris">
+    <div class="footer__empresa">
+        <div class="footer__empresa-fin">
+            <p class="footer__empresa-texto">
+                <img src="img/copyright.png" alt="copyright" class="footer__empresa-icon"> 2019 Evernote Corporation. Todos los derechos reservados.
+            </p>
+        </div>
+        <div class="footer__empresa-legal">
+            <nav class="footer__empresa-nav">
+                <ul class="footer__empresa-ul">
+                    <li class="footer__empresa-li">
+                        <a href="#" class="footer__empresa-link">Seguridad</a>
+                    </li>
+                    <li class="footer__empresa-li">
+                        <a href="#" class="footer__empresa-link">Legal</a>
+                    </li>
+                    <li class="footer__empresa-li">
+                        <a href="#" class="footer__empresa-link">Privacidad</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.4.0/dist/ffnm.min.js" integrity="sha384-WsAoFj8H5Jl3+nG7ON5XXiozrADpSLshx/XdN7xu2GUVkJEZB5C3AGrFtdi6tARh" crossorigin="anonymous"></script>
+</body>
+</html>

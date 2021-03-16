@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Sapp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+        <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 600px)">
+        <!-- End CSS -->
+        <!-- Java -->
+        <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.4.0/dist/ffnm.min.js" integrity="sha384-WsAoFj8H5Jl3+nG7ON5XXiozrADpSLshx/XdN7xu2GUVkJEZB5C3AGrFtdi6tARh" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- End Java -->
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__logo">
+                    <a href="index.html" class="header__logo">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="nav" id="nav">
+                    <ul class="nav__ul">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="equipo.html" class="nav__link">Equipo</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="precios.html" class="nav__link">Precio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="FAQ.html" class="nav__link">FAQ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contacto.html" class="nav__link">Contacto</a>
+                        </li>
+                    </ul>
+                    <a is-click="class:remove('nav--ver', '#nav')" href="#" class="nav__cerrar" href="#">
+                        <img class="nav__cerrar-img" src="img/close.svg" alt="cerrar">
+                    </a>
+                </nav>
+                <!-- Boton hamburguesita -->
+                <a is-click="class:add('nav--ver', '#nav')" href="#" class="nav__abrir-smartphone">
+                    <img class="nav__abrir-smartphone-img" src="img/hamburguesita.svg" alt="menu">
+                </a>
+            </div>
+        </header>
+        <main class="main contacto">
+            <section class="form">
+                <div class="container">
+                    <h1 class="form__titulo">Contacto</h1>
+                    <hr class="separacion"/>
+                    <p class="form__descripcion">
+                        Velit egestas dui, id ornare arcu odio ut sem nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies integer? A, condimentum vitae sapien pellentesque habitant morbi tristique senectus?
+                    </p>
+                    <div class="form__columnas">
+                        <div class="form__datos">
+                            <p class="form__datos-descripcion">Et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut. Quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar.</p>
+                            <ul class="form__lista">
+                                <li class="form__item form__item--house">
+                                    <a class="form__link" href="geo:1.2,0.7">Calle Blasco Ibañez, 5</a>
+                                </li>
+                                <li class="form__item form__item--phone">
+                                    <a class="form__link" href="tel:>+0023232323">+34 652 34 87 63</a>
+                                </li>
+                                <li class="form__item form__item--email">
+                                    <a class="form__link" href="mailto:mi@correo.mentira">mi@correo.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div is-visible="class:add('form__formulario--show')" class="form__formulario">
+                            <form>
+                                <p>
+                                    <input required class="form__input" name="nombre" type="text" value="" placeholder="Nombre">
+                                </p>
+                                <p>
+                                    <input required class="form__input" name="email" type="email" value="" placeholder="Email">
+                                </p>
+                                <p>
+                                    <input required class="form__input" name="asunto" type="text" value="" placeholder="Asunto">
+                                </p>
+                                <p>
+                                    <textarea required class="form__textarea" name="mensaje" placeholder="Mensaje"></textarea>
+                                </p>
+                                <p>
+                                    <label class="form__label">
+                                        Acepto las condiciones de uso y privacidad
+                                        <input class="form__checkbox" name="legal" type="checkbox">
+                                    </label>
+                                </p>
+                                <p>
+                                    <button class="form__submit" type="submit">
+                                        Enviar
+                                        <img class="form__submit-img" src="img/contacto/submit.png" alt="icono-enviar">
+                                    </button>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+// Página de inicio...
+
+.home
+  display: flex
+  .main
+    width: 75%
+    &__titulo
+      text-align: center
+      color: #D8B4A0
+      font-size: 2.2rem
+    &__icon
+      width: 4rem
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 0 auto
+    .productos
+      padding: 1rem
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      grid-gap: 2rem
+      margin: 1rem 0
+    .producto
+      width: 25%
+      padding: 1rem
+      background-color: #F3D8C7
+      &__titulo, &__precio
+        text-align: center
+
+  aside.carrito
+    width: 25%
+    padding: 1rem
+    .carrito__ver-todo
+      display: none
+    .carrito__total-texto
+      background: #D8B4A0
+      margin: 0
+      width: 15.4rem
+      padding: 1rem
+      text-align: right
+    .carrito__total-texto-movil
+      display: none
+    .productos
+      margin-left: 1rem
+      &__titulo
+        color: gray
+
+      &__lista
+        margin: 0
+        padding: 0
+        text-align: center
+
+      &__elemento
+        width: 90%
+        background-color: #F3D8C7
+        margin: 0
+        padding: 1rem 0

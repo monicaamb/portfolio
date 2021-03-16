@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Sapp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+        <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 600px)">
+        <!-- End CSS -->
+        <!-- Java -->
+        <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.4.0/dist/ffnm.min.js" integrity="sha384-WsAoFj8H5Jl3+nG7ON5XXiozrADpSLshx/XdN7xu2GUVkJEZB5C3AGrFtdi6tARh" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- End Java -->
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__logo">
+                    <a href="index.html" class="header__logo">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="nav" id="nav">
+                    <ul class="nav__ul">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="equipo.html" class="nav__link">Equipo</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="precios.html" class="nav__link">Precio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">FAQ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contacto.html" class="nav__link">Contacto</a>
+                        </li>
+                    </ul>
+                    <a is-click="class:remove('nav--ver', '#nav')" href="#" class="nav__cerrar" href="#">
+                        <img class="nav__cerrar-img" src="img/close.svg" alt="cerrar">
+                    </a>
+                </nav>
+                <!-- Boton hamburguesita -->
+                <a is-click="class:add('nav--ver', '#nav')" href="#" class="nav__abrir-smartphone">
+                    <img class="nav__abrir-smartphone-img" src="img/hamburguesita.svg" alt="menu">
+                </a>
+            </div>
+        </header>
+        <main class="main dudas">
+            <section class="FAQ">
+                <div class="container">
+                    <h1 class="FAQ__titulo">Frequently Asked Questions</h1>
+                    <hr class="separacion"/>
+                    <p class="FAQ__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, fuga ipsam laborum omnis pariatur veniam!</p>
+                    <div class="FAQ__preguntas">
+                        <div class="FAQ__install">
+                            <p class="FAQ__pregunta">How to install sApp?</p>
+                            <p class="FAQ__respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut cumque deserunt earum error ex fugit, iure maiores mollitia neque nobis officia optio possimus quam quia, quos reiciendis repudiandae saepe sapiente sed ullam voluptas voluptates voluptatibus. Accusantium assumenda beatae cum cupiditate dolore dolorum enim esse eum fuga illo laboriosam mollitia nemo omnis pariatur reprehenderit sequi, soluta? Consequuntur maiores nam non?</p>
+                        </div>
+                        <div class="FAQ__edit">
+                            <p class="FAQ__pregunta">How can I edit my personal information?</p>
+                            <p class="FAQ__respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut cumque deserunt earum error ex fugit, iure maiores mollitia neque nobis officia optio possimus quam quia, quos reiciendis repudiandae saepe sapiente sed ullam voluptas voluptates voluptatibus. Accusantium assumenda beatae cum cupiditate dolore dolorum enim esse eum fuga illo laboriosam mollitia nemo omnis pariatur reprehenderit sequi, soluta? Consequuntur maiores nam non?</p>
+                        </div>
+                        <div class="FAQ__support">
+                            <p class="FAQ__pregunta">Can I get support from the Author?</p>
+                            <p class="FAQ__respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut cumque deserunt earum error ex fugit, iure maiores mollitia neque nobis officia optio possimus quam quia, quos reiciendis repudiandae saepe sapiente sed ullam voluptas voluptates voluptatibus. Accusantium assumenda beatae cum cupiditate dolore dolorum enim esse eum fuga illo laboriosam mollitia nemo omnis pariatur reprehenderit sequi, soluta? Consequuntur maiores nam non?</p>
+                        </div>
+                        <div class="FAQ__contact">
+                            <p class="FAQ__pregunta">Contact form isn't working?</p>
+                            <p class="FAQ__respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut cumque deserunt earum error ex fugit, iure maiores mollitia neque nobis officia optio possimus quam quia, quos reiciendis repudiandae saepe sapiente sed ullam voluptas voluptates voluptatibus. Accusantium assumenda beatae cum cupiditate dolore dolorum enim esse eum fuga illo laboriosam mollitia nemo omnis pariatur reprehenderit sequi, soluta? Consequuntur maiores nam non?</p>
+                        </div>
+                        <div class="FAQ__free">
+                            <p class="FAQ__pregunta">Do you have a free trail?</p>
+                            <p class="FAQ__respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut cumque deserunt earum error ex fugit, iure maiores mollitia neque nobis officia optio possimus quam quia, quos reiciendis repudiandae saepe sapiente sed ullam voluptas voluptates voluptatibus. Accusantium assumenda beatae cum cupiditate dolore dolorum enim esse eum fuga illo laboriosam mollitia nemo omnis pariatur reprehenderit sequi, soluta? Consequuntur maiores nam non?</p>
+                        </div>
+                        <div class="FAQ__working">
+                            <p class="FAQ__pregunta">Contact form isn't working?</p>
+                            <p class="FAQ__respuesta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut cumque deserunt earum error ex fugit, iure maiores mollitia neque nobis officia optio possimus quam quia, quos reiciendis repudiandae saepe sapiente sed ullam voluptas voluptates voluptatibus. Accusantium assumenda beatae cum cupiditate dolore dolorum enim esse eum fuga illo laboriosam mollitia nemo omnis pariatur reprehenderit sequi, soluta? Consequuntur maiores nam non?</p>
+                        </div>
+                    </div>
+                    <div class="FAQ__help">
+                        <p class="FAQ__frase">Haven't find suitable answer?
+                            <br><a class="FAQ__subrayado" href="contacto.html">Tell us what you need.</a></br>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

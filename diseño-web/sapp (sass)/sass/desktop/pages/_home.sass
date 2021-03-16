@@ -1,0 +1,199 @@
+// Página de inicio...
+.home
+  .landing
+    position: relative
+    padding-top: 5rem
+    color: $color_blanco
+    padding-bottom: 2rem
+    background:
+      image: url(../img/fondo.jpg)
+      position: center center
+      size: cover
+    &::before
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      opacity: .7
+      background-image: $degradado_principal
+      content: ''
+      z-index: 1
+    .container
+      display: flex
+      position: relative
+      z-index: 100
+      padding-bottom: 2rem
+      align-items: center
+    &__tiendas
+      display: flex
+      grid-gap: 1rem
+    &__tienda
+      display: flex
+      grid-gap: 1rem
+      align-items: center
+      text-decoration: none
+      color: $color_negro
+      padding: 1rem
+      border: 2px solid $popstar
+      border-radius: 1rem
+      font-weight: bold
+      &:hover
+        background-color: $popstar
+        color: $color_blanco
+    &__android, &__ios
+      width: 2rem
+    &__texto
+      width: 50%
+      margin-top: 1rem
+      font-size: 1.2rem
+    &__imagen
+      width: 50%
+      margin-top: 3rem
+      padding: 0 9rem
+      box-sizing: border-box
+      transform: translateX(100vw)
+      animation:
+        name: aniLandingSmartphone
+        duration: 1s
+        iteration-count: 1
+        delay: 1s
+        fill-mode: forwards
+    &__curva
+      z-index: 50
+      bottom: -2px
+      left: 0
+      right: 0
+      position: absolute
+
+  .numeros
+    padding: 3rem
+    .container
+      display: flex
+      justify-content: space-between
+    &__apartado
+      text-align: center
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        right: -5rem
+        top: 1rem
+        height: 2rem
+        width: 1px
+        background-color: transparentize($color_negro, .8)
+      &--sin-separador
+        &::after
+          display: none
+    &__apartado
+      position: relative
+      text-align: center
+    &__texto
+      font-size: 3rem
+      font-weight: bold
+      color: $popstar
+      text-transform: uppercase
+      margin: 0
+    &__titulo
+      font-size: 1.2rem
+
+  .premium
+    background: $degradado_apartado
+    padding: 3rem 0
+    &__features
+      padding: .2rem 1rem
+      border-radius: 1.2rem
+      display: inline-block
+      font-size: 1.2rem
+      box-shadow: 0 5px 14px 2px transparentize($color_negro, .8)
+      background: $color_blanco
+    &__pregunta
+      text-align: center
+      font-size: 1rem
+    &__bombilla
+      width: .7rem
+      margin-right: .1rem
+    &__palabra
+      color: $morado-azulado
+      font-weight: bold
+    &__titulo
+      font-size: 2.3rem
+      font-weight: bold
+      color: $color_blanco
+    &__texto
+      padding: .5rem
+      margin-bottom: 2rem
+      color: $color_blanco
+      font-size: 1.2rem
+    &__apartados
+      display: flex
+      text-align: center
+      font-size: 1.2rem
+      grid-gap: 3rem
+    &__img-1
+      width: 3.5rem
+    &__img-2
+      width: 3.8rem
+    &__img-3
+      width: 3.2rem
+    &__separador
+      color: $color_blanco
+      width: 60%
+    &__fully, &__live, &__secure
+      box-shadow: 0 5px 14px 2px transparentize($color_negro, .8)
+      padding: 1rem
+      background: $color_blanco
+
+  .work
+    background: $color_blanco
+    color: $color_negro
+    padding: 3rem 0
+    text-align: center
+    &__flecha
+      width: 3rem
+    &__titulo
+      font-size: 2.3rem
+    &__texto
+      font-size: 1.2rem
+    &__subtexto
+      font-size: 1.2rem
+    &__item
+      margin-top: 2rem
+      width: 4.6rem
+    &__items
+      display: grid
+      grid-template-columns: repeat(14, 1fr)
+      grid-template-rows: 1fr
+      align-items: center
+      grid-gap: 1rem
+      // 100% y una fila
+      grid-template-rows: 1fr
+      // 25% 50% 25% > 3 filas
+      grid-template-rows: 1fr 2fr 1fr
+      // 1/3 y 2/3 > 2 filas
+      grid-template-rows: 1fr 2fr
+
+      grid-template-rows: 1fr
+    &__item--settings
+      grid-column: 1 / 5
+      grid-row: 1 / 2
+      opacity: 0
+      @include aniWork(0s)
+    &__item--flecha-izquierda
+      grid-column: 5 / 6
+      grid-row: 1 / 2
+      @include aniWork(1s)
+    &__item--multimedia
+      grid-column: 6 / 10
+      grid-row: 1 / 2
+      @include aniWork(2s)
+    &__item--flecha-derecha
+      grid-column: 10 / 11
+      grid-row: 1 / 2
+      @include aniWork(3s)
+    &__item--apoyo
+      grid-column: 11 / 15
+      grid-row: 1 / 2
+      @include aniWork(4s)
+
+

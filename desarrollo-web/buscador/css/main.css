@@ -1,0 +1,15 @@
+#trabajos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.trabajo {
+    width: 32%;
+}
+
+.trabajo__imagen {
+    width: 100%;
+}
+
+

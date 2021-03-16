@@ -1,0 +1,31 @@
+// header
+.header
+  .nav
+    background-color: $color_blanco
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    transform: translateX(-100vw)
+    transition: .5s
+    flex-direction: column
+    text-align: center
+    &--ver
+      transform: translateX(0)
+    &__ul
+      flex-direction: column
+    &__link
+      font-size: 1.6rem
+      display: block
+      margin: .4rem 0
+    &__abrir-smartphone-img
+      width: 2.2rem
+    &__cerrar
+      &-img
+      display: block
+      width: 2.6rem
+      margin-top: 3rem

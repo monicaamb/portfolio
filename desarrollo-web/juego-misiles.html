@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego Misiles</title>
+    <!-- Lodash -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
+
+    <style>
+    @keyframes aniMisil {
+        from {
+            top: -10vh;
+        } to {
+            top: 90vh;
+      }
+    }
+
+    body {
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .misil {
+        position: absolute;
+        width: 4rem;
+        height: 6rem;
+        background: black;
+        animation-name: aniMisil;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+    }
+
+    .misil--camino-0 {
+        left: 20%;
+    }
+
+    .misil--camino-1 {
+        left: calc(50% - 2rem);
+    }
+
+    .misil--camino-2 {
+        right: 20%;
+    }
+
+    .base {
+        position: absolute;
+        width: 5rem;
+        height: 2rem;
+        background: gray;
+    }
+
+    .base--izquierda {
+        left: 19.3%;
+        bottom: 0;
+    }
+
+    .base--central {
+        left: calc(50% - 2.5rem);
+        right: auto;
+        bottom: 0;
+    }
+
+    .base--derecha {
+        right: 19.3%;
+        bottom: 0;
+    }
+    </style>
+</head>
+<body>
+    <div id="cielo"></div>
+
+    <div class="base base--izquierda"></div>
+    <div class="base base--central"></div>
+    <div class="base base--derecha"></div>
+    <script>
+        //Variables
+        const cielo = document.querySelector('#cielo');
+        //Funciones
+        function destruirMisil (evento) {
+            const miMisil = evento.target;
+            miMisil.remove();
+        }
+
+        function destruirBase (evento) {
+            const miMisil = evento.target;
+            miMisil.remove();
+
+            if (parseInt(miMisil.dataset.camino) === 0) {
+                document.querySelector('.base--izquierda').remove();
+            } else if (parseInt(miMisil.dataset.camino) === 1) {
+                document.querySelector('.base--central').remove();
+            } else if (parseInt(miMisil.dataset.camino) === 2) {
+                document.querySelector('.base--derecha').remove();
+            }
+        }
+
+        function generarMisil() {
+            //Seleccionar camino aleatorio
+            const caminoAleatorio = _.random(0, 2);
+
+            //Generamos el misil
+            const miMisil = document.createElement('div');
+            miMisil.classList.add('misil', 'misil--camino-'.concat(caminoAleatorio));
+            miMisil.dataset.camino = caminoAleatorio;
+
+            miMisil.addEventListener('click', destruirMisil);
+            miMisil.addEventListener('animationend', destruirBase);
+
+
+
+            //Insertamos en cielo
+            cielo.appendChild(miMisil);
+        }
+
+        generarMisil();
+
+        //Inicio
+        setInterval(generarMisil, 1000);
+    </script>
+</body>
+</html>

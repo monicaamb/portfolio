@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Sapp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+        <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 600px)">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- End CSS -->
+        <!-- Java -->
+        <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.4.0/dist/ffnm.min.js" integrity="sha384-WsAoFj8H5Jl3+nG7ON5XXiozrADpSLshx/XdN7xu2GUVkJEZB5C3AGrFtdi6tARh" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- End Java -->
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__logo">
+                    <a href="index.html" class="header__logo">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="nav" id="nav">
+                    <ul class="nav__ul">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="equipo.html" class="nav__link">Equipo</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="precios.html" class="nav__link">Precio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="FAQ.html" class="nav__link">FAQ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contacto.html" class="nav__link">Contacto</a>
+                        </li>
+                    </ul>
+                    <a is-click="class:remove('nav--ver', '#nav')" href="#" class="nav__cerrar" href="#">
+                        <img class="nav__cerrar-img" src="img/close.svg" alt="cerrar">
+                    </a>
+                </nav>
+                <!-- Boton hamburguesita -->
+                <a is-click="class:add('nav--ver', '#nav')" href="#" class="nav__abrir-smartphone">
+                    <img class="nav__abrir-smartphone-img" src="img/hamburguesita.svg" alt="menu">
+                </a>
+            </div>
+        </header>
+        <main class="precios">
+            <section class="carrousel">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="../img/precio/carrousel-img3.jpg" alt="smarthphone" class="swiper-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/precio/carrousel-img22.jpg" alt="smarthphone" class="swiper-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/precio/carrousel-img1.jpg" alt="smarthphone" class="swiper-img">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            </section>
+            <section class="unlock">
+                <div class="container">
+                    <div class="unlock__textos">
+                        <h1 class="unlock__titulo">Unlock Full Power Of sApp</h1>
+                        <hr class="separacion">
+                        <p class="unlock__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, illum?</p>
+                    </div>
+                    <div is-visible="class:add('animate__backInLeft')" class="unlock__visual animate__animated">
+                        <div class="unlock__caja-bici">
+                            <img src="../img/precio/bicycle-solid.svg" alt="bicicleta" class="unlock__img-bici">
+                            <h2 class="unlock__titulo">Basic</h2>
+                            <p class="unlock__numero">$49</p>
+                            <p class="unlock__frase">5GB Linux Web Space</p>
+                            <p class="unlock__frase">5 MySQL Databases</p>
+                            <p class="unlock__frase">24/7 Tech Support</p>
+                            <p class="unlock__frase">Daily Backups</p>
+                            <p class="unlock__sign-up">
+                                <a href="#" class="unlock__link">Sign up</a>
+                            </p>
+                        </div>
+                        <div class="unlock__caja-moto">
+                            <img src="../img/precio/motorcycle-solid.svg" alt="moto" class="unlock__img-moto">
+                            <h2 class="unlock__titulo">Pro</h2>
+                            <p class="unlock__numero">$129</p>
+                            <p class="unlock__frase">10GB Linux Web Space</p>
+                            <p class="unlock__frase">50 MySQL Databases</p>
+                            <p class="unlock__frase">Unlimited Email</p>
+                            <p class="unlock__frase">Daily Backups</p>
+                            <p class="unlock__sign-up">
+                                <a href="#" class="unlock__link">Sign up</a>
+                            </p>
+                        </div>
+                    </div>
+                    <br class="unlock__final">Not sure what to choose? <br><a href="contacto.html" class="unlock__enlace">Contact us.</a></br></p>
+                </div>
+            </section>
+        </main>
+        <script>
+        var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+        el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+        el: '.swiper-scrollbar',
+        },
+        })
+        </script>
+    </body>
+</html>

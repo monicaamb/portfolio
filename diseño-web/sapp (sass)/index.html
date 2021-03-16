@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Sapp</title>
+        <link rel="icon" type="image/png" href="img/logo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+        <!-- CSS -->
+        <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+        <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 600px)">
+        <!-- Java -->
+        <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.4.0/dist/ffnm.min.js" integrity="sha384-WsAoFj8H5Jl3+nG7ON5XXiozrADpSLshx/XdN7xu2GUVkJEZB5C3AGrFtdi6tARh" crossorigin="anonymous"></script>
+        <!-- End Java -->
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__logo">
+                    <a href="index.html" class="header__logo">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="nav" id="nav">
+                    <ul class="nav__ul">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="equipo.html" class="nav__link">Equipo</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="precios.html" class="nav__link">Precio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="FAQ.html" class="nav__link">FAQ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contacto.html" class="nav__link">Contacto</a>
+                        </li>
+                    </ul>
+                    <a is-click="class:remove('nav--ver', '#nav')" href="#" class="nav__cerrar" href="#">
+                        <img class="nav__cerrar-img" src="img/close.svg" alt="cerrar">
+                    </a>
+                </nav>
+                <!-- Boton hamburguesita -->
+                <a is-click="class:add('nav--ver', '#nav')" href="#" class="nav__abrir-smartphone">
+                    <img class="nav__abrir-smartphone-img" src="img/hamburguesita.svg" alt="menu">
+                </a>
+            </div>
+        </header>
+    <main class="main home">
+        <section class="landing">
+            <div class="container">
+                <div class="landing__texto">
+                    <h1 class="landing__titulo">
+                        Sapp
+                    </h1>
+                    <p class="landing__texto">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus ad commodi error esse incidunt ipsum ratione similique voluptates voluptatum.
+                    </p>
+                    <div class="landing__tiendas">
+                        <a href="" class="landing__tienda">
+                            <img class="landing__android" src="img/android-brands.svg" alt="android">
+                            Android
+                        </a>
+                        <a href="" class="landing__tienda">
+                            <img class="landing__ios" src="img/app-store-ios-brands.svg" alt="ios">
+                            IOS
+                        </a>
+                    </div>
+                <div class="landing__texto">
+                    Válido para todo, vamos.
+                </div>
+            </div>
+            <div class="landing__imagen">
+                <img src="img/movil-recortado.png" alt="smartphone">
+            </div>
+            </div>
+            <img class="landing__curva" src="img/curva.svg" alt="curva">
+        </section>
+        <section class="numeros">
+            <div class="container">
+                <div class="numeros__apartado">
+                    <p class="numeros__texto">10m</p>
+                    <h2 class="numeros__titulo">Users</h2>
+                </div>
+                <div class="numeros__apartado">
+                    <p class="numeros__texto">23k</p>
+                    <h2 class="numeros__titulo">Download</h2>
+                </div>
+                <div class="numeros__apartado">
+                    <p class="numeros__texto">9m</p>
+                    <h2 class="numeros__titulo">Customers</h2>
+                </div>
+                <div class="numeros__apartado numeros__apartado--sin-separador">
+                    <p class="numeros__texto">12k</p>
+                    <h2 class="numeros__titulo">Developer</h2>
+                </div>
+            </div>
+        </section>
+        <section class="premium">
+            <div class="container">
+                <div class="premium__pregunta">
+                    <div class="premium__features">
+                    <p class="premium__palabras">
+                        <img class="premium__bombilla" src="img/lightbulb-regular.svg" alt="bombilla">
+                        <span class="premium__palabra">Premium </span>Features
+                    </p>
+                    </div>
+                    <h1 class="premium__titulo">What Makes sApp Different?</h1>
+                    <hr class="premium__separador"/>
+                    <p class="premium__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur error facere fugit ipsum iure nemo, quibusdam quidem quisquam quos recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, odit.</p>
+                </div>
+            <div class="premium__apartados">
+                <div class="premium__fully">
+                    <img class="premium__img-1" src="img/fully2.png" alt="fully-functional">
+                    <h2 class="premium__h2">Fully functional</h2>
+                    <p class="premium__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum enim incidunt necessitatibus.</p>
+                </div>
+                <div class="premium__live">
+                    <img class="premium__img-2" src="img/livechat.png" alt="live-chat">
+                    <h2 class="premium__h2">Live Chat</h2>
+                    <p class="premium__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum enim incidunt necessitatibus.</p>
+                </div>
+                <div class="premium__secure">
+                    <img class="premium__img-3" src="img/lock.png" alt="secure-data">
+                    <h2 class="premium__h2">Secure Data</h2>
+                    <p class="premium__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum enim incidunt necessitatibus.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="work">
+            <div class="container">
+                <h1 class="work__titulo">Rhoncus est pellentesque?</h1>
+                <p class="work__texto">
+                    Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi? Sed velit dignissim sodales ut eu sem integer vitae justo eget!
+                </p>
+                <div class="work__items">
+                    <div is-visible="class:add('work__item--settings')">
+                        <img alt="configuracion" class="work__item" src="img/settings.png">
+                        <h2 class="work__subtitulo">Et ultrices neque?</h2>
+                        <p class="work__subtexto">
+                            Risus feugiat in ante metus, dictum at tempor commodo, ullamcorper!
+                        </p>
+                    </div>
+                    <img is-visible="class:add('work__item--flecha-izquierda')" class="work__flecha" alt="flecha" src="img/flecha.png">
+                    <div is-visible="class:add('work__item--multimedia')">
+                        <img alt="multimedia" class="work__item" src="img/musical-notes.png">
+                        <h2 class="work__subtitulo">Et ultrices neque?</h2>
+                        <p class="work__subtexto">
+                            Risus feugiat in ante metus, dictum at tempor commodo, ullamcorper!
+                        </p>
+                    </div>
+                    <img is-visible="class:add('work__item--flecha-derecha')" class="work__flecha" alt="flecha" src="img/flecha.png">
+                    <div is-visible="class:add('work__item--apoyo')">
+                        <img alt="apoyo" class="work__item" src="img/support.png">
+                        <h2 class="work__subtitulo">Et ultrices neque?</h2>
+                        <p class="work__subtexto">
+                            Risus feugiat in ante metus, dictum at tempor commodo, ullamcorper!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    </body>
+</html>

@@ -1,0 +1,837 @@
+/*FUENTES*/
+@font-face {
+    font-family: "lato";
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "lato";
+    src: url("../fonts/Lato-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "itim";
+    src: url("../fonts/Itim-Regular.ttf");
+}
+/*FIN FUENTES*/
+
+/*GENERALES*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "lato";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: itim;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a {
+    color: black;
+    display: block;
+    padding: .5rem;
+}
+/*END GENERALES*/
+
+/*HEADER*/
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ccff66;
+}
+
+.header__logo-img {
+    width: 4rem;
+}
+
+.header__abrir-menu, .nav__cerrar {
+    display: none;
+}
+
+.nav__ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav__link {
+    display: block;
+    padding: 1rem;
+    transition: .5s;
+    color: black;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.nav__link:hover {
+    background: #3BC14A;
+    color: white;
+    border-radius: .2rem;
+}
+/*END HEADER*/
+
+/*LANDING*/
+.landing {
+    background-color: #3BC14A;
+    color: white;
+    height: 100vh;
+}
+
+.landing > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 10rem;
+}
+
+.landing__titulo {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin: 0;
+}
+
+.landing__texto {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.landing__button {
+    background-color: white;
+    color: #3BC14A;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.landing__button:hover {
+    background-color:  #3BC14A;
+    color: white;
+}
+
+.landing__img {
+    width: 50%;
+}
+/*END LANDING*/
+
+/*CENTRATE*/
+.centrate {
+    background-color: lightgray;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.centrate__cabeza {
+    width: 8rem;
+}
+
+.centrate__titulo {
+    font-size: 3rem;
+}
+
+.centrate__textos {
+    color: gray;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 3rem;
+}
+
+.centrate__texto {
+    margin: 2rem 4rem;
+}
+/*END CENTRATE*/
+
+/*ESCALERA*/
+.escalera {
+    background-color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.escalera__img {
+    width: 8rem;
+}
+
+.escalera__titulo {
+    font-size: 2.5rem;
+}
+
+.escalera__texto {
+    color: gray;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin: 2rem 4rem;
+    margin-bottom: 6rem;
+}
+/*END ESCALERA*/
+
+/*VALORES*/
+.valores__fila {
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+}
+
+.valores__textos, .valores__imagen-contenedor {
+    width: 50%;
+}
+
+.valores__imagen-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valores__img {
+    width: 38%;
+}
+
+.valores__titulo {
+    color: #3BC14A;
+    font-size: 2rem;
+}
+
+.valores__texto {
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.valores__enlace {
+    color: #3BC14A;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.valores__enlace::after {
+    content: "➡";
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.valores__fila--invertido {
+    flex-direction: row-reverse;
+}
+.valores__button {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.valores__link {
+    background-color: #3BC14A;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #3BC14A;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.valores__link:hover {
+    background-color: white;
+    color: #3BC14A;
+    border: 1px solid #3BC14A;
+}
+/*END VALORES*/
+
+/*EMPRESAS*/
+.empresas__icono {
+    text-align: center;
+    margin-top: 13rem;
+}
+
+.empresas__corazon {
+    width: 4rem;
+    margin-top: -4rem;
+}
+
+.empresas__marcas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-gap: 2rem;
+    margin-top: -1rem;
+}
+
+.empresas__imagenes {
+    width: 12%;
+}
+
+.empresas__texto {
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 9rem;
+}
+/*END EMPRESAS*/
+
+/*FUNCIONA*/
+.funciona {
+    background-color: lightgray;
+}
+
+.funciona__items {
+    display: flex;
+    padding: 4rem;
+    grid-gap: 2.5rem;
+    margin-top: -8rem;
+    align-items: center;
+    margin-bottom: -2rem;
+}
+
+.funciona__titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 5rem;
+    margin-top: 0;
+}
+
+.funciona__texto {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.funciona__titulillos {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.funciona__link {
+    background-color: white;
+    color: #3BC14A;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #3BC14A;
+    padding: 1rem;
+    display: inline-block;
+    border-radius: .5rem;
+}
+
+.funciona__link:hover {
+    background-color: #3BC14A;
+    color: white;
+    border: 1px solid #3BC14A;
+}
+/*END FUNCIONA*/
+
+/*FUNCIONES*/
+.funciones__titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 5rem;
+    margin-top: 0;
+}
+
+.funciones__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2.5rem;
+    flex-wrap: wrap;
+    margin-top: -3rem;
+}
+
+.funciones__item {
+    width: 30%;
+}
+
+.funciones__texto {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+/*END FUNCIONES*/
+
+/*REGISTRO*/
+.registro > .container {
+    display: flex;
+    background-color: #3BC14A;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
+
+.registro__intro {
+    color: white;
+    margin: 15.5rem 0;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.registro__titulo {
+    font-size: 2.8rem;
+}
+
+.registro__texto {
+    font-size: 1.3rem;
+}
+
+.registro__link {
+    display: block;
+    background-color: white;
+    font-size: 1.1rem;
+    color: black;
+    padding: 1rem 1rem;
+    border-radius: .5rem;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+
+.registro__link:hover {
+    background-color: #3BC14A;
+    border: 1px solid white;
+    color: white;
+}
+
+.registro__link--google::before {
+    content: '';
+    background-image: url(../img/logo-google.png);
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-size: cover;
+}
+
+.registro__datos {
+    color: white;
+    text-align: justify;
+    line-height: 2rem;
+    margin: 9rem -1rem;
+}
+
+.registro__bien {
+    text-transform: uppercase;
+    margin-left: 11rem;
+}
+
+.registro__email {
+    height: 1.5rem;
+    width: 25rem;
+    padding: .5rem 0;
+    border-radius: .5rem;
+    border: none;
+}
+
+.registro__password {
+    height: 1.5rem;
+    width: 25rem;
+    padding: .5rem 0;
+    border-radius: .5rem;
+    border: none;
+}
+
+.registro__enlace {
+    display: block;
+    background-color: white;
+    font-size: 1rem;
+    color: #3BC14A;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    width: 21rem;
+    text-align: center;
+    margin-top: -2rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+
+.registro__enlace:hover {
+    border-radius: .5rem;
+    background-color: #3BC14A;
+    border: 1px solid white;
+    color: white;
+}
+
+.registro__politica {
+    line-height: 1.4rem;
+}
+
+.registro__negrita {
+    font-weight: bold;
+}
+
+.registro__password::after {
+    content: 'hola';
+
+}
+/*END REGISTRO*/
+
+/*FOOTER*/
+.footer >.container {
+    padding: 3rem;
+}
+
+.footer__logo {
+    margin-left: -67rem;
+    margin-top: -1rem;
+    width: 12rem;
+}
+
+.footer__linea {
+    background-color: black;
+    height: .1rem;
+}
+
+.footer__submenus {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.submenu__titulo {
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.submenu__link {
+    margin-top: 1.5rem;
+    color: gray;
+}
+
+.submenu__ul {
+    text-align: justify;
+}
+
+.footer__login-registro {
+    text-align: right;
+}
+.footer__login-registro-link {
+    color: #3BC14A;
+}
+
+.footer__login-registro-link--cuadrado {
+    display: block;
+    border: 2px solid #3BC14A;
+    padding: .7rem;
+    margin-top: 1rem;
+}
+
+.footer__login-registro-link--cuadrado:hover {
+    background-color: #3BC14A;
+    color: white;
+}
+
+.footer__idioma-redes {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.footer__idioma-redes-ul {
+    display: flex;
+}
+
+.footer__select-label {
+    font-weight: bold;
+}
+
+.footer__idioma-redes-link-imagen {
+    height: 2rem;
+}
+
+.footer__empresa {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    align-items: center;
+}
+
+.footer__empresa-link {
+    color: gray;
+}
+
+.footer__empresa-ul {
+    display: flex;
+}
+
+.footer__linea-gris {
+    height: .1.1rem;
+    background-color: gray;
+}
+
+.footer__empresa-icon {
+    width: .8rem;
+}
+/*END FOOTER*/
+
+@media all and (max-width: 600px) {
+    /*HEADER*/
+    .header__abrir-menu, .nav__cerrar {
+        display: block;
+        background: white;
+    }
+
+    .header__abrir-icono {
+        width: 2.3rem;
+        padding: .1rem;
+
+    }
+
+    .nav {
+        position: fixed;
+        width: 100vw;
+        /*PIN*/
+        top: 0;
+        left: -100vw;
+        bottom: 0;
+        /*END PIN*/
+        background: yellowgreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+        opacity: 0;
+    }
+
+    .nav.active {
+        /*Con estos parámetros el menú aparece*/
+        left: 0;
+        opacity: 1;
+    }
+
+    .nav__ul {
+        flex-direction: column;
+    }
+
+    .nav__link {
+        text-align: center;
+        color: white;
+        font-size: 1.8rem;
+    }
+
+    .nav__cerrar {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+
+    }
+
+    .nav__cerrar-img {
+        width: 2rem;
+    }
+
+    /*END HEADER*/
+
+    /*LANDING*/
+    .landing {
+        height: initial;
+    }
+
+    .landing > .container {
+        flex-direction: column;
+        height: initial;
+    }
+
+    .landing__img {
+        width: 21rem;
+        margin-top: 2rem;
+    }
+
+    .landing__titulo {
+        margin-top: -5rem;
+    }
+
+    .landing__br {
+        display: none;
+    }
+
+    /*END LANDING*/
+
+    /*CENTRATE*/
+    .centrate__textos {
+        flex-direction: column;
+        grid-gap: 0;
+    }
+
+    /*END CENTRATE*/
+
+    /*VALORES*/
+    .valores__fila {
+        flex-direction: column-reverse;
+        margin-top: -2rem;
+    }
+
+    .valores__textos, .valores__imagen-contenedor {
+        width: 100%;
+        text-align: center;
+    }
+
+    .valores__img {
+        width: 80%;
+    }
+    /*END VALORES*/
+
+    /*EMPRESAS*/
+    .empresas__marcas {
+        flex-direction: column;
+    }
+
+    .empresas__imagenes {
+        width: 50%;
+    }
+
+    .empresas__texto {
+        margin-top: 0;
+    }
+
+    .empresas__icono {
+        margin-top: 9rem;
+    }
+
+    /*END EMPRESAS*/
+
+    /*FUNCIONA*/
+    .funciona__titulo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .funciona__items {
+        flex-direction: column;
+    }
+
+    /*END FUNCIONA*/
+
+    /*FUNCIONES*/
+    .funciones__items {
+        flex-direction: column;
+    }
+
+    .funciones__item {
+        width: 100%;
+    }
+
+    .funciones__titulo {
+        justify-content: center;
+        display: flex;
+    }
+
+    /*END FUNCIONES*/
+
+    /*REGISTRO*/
+    .registro > .container {
+        flex-direction: column;
+    }
+
+    .registro__titulo {
+        text-align: center;
+        margin-top: -6rem;
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+    }
+
+    .registro__texto {
+        text-align: center;
+
+    }
+
+    .registro__link {
+        display: block;
+        font-size: 1.1rem;
+        color: black;
+        padding: 1rem 1rem;
+        border-radius: .5rem;
+        font-weight: bold;
+        width: 12rem;
+        height: 5rem;
+    }
+
+    .registro__link--google::before {
+        content: '';
+        background-image: url(../img/logo-google.png);
+        width: 1.2rem;
+        height: 1.2rem;
+        display: block;
+        position: absolute;
+        top: 5rem;
+        left: 6rem;
+        background-size: cover;
+    }
+
+    .registro__bien {
+        margin: 0;
+        text-align: center;
+    }
+
+    .registro__email {
+        width: 14rem;
+    }
+
+    .registro__password {
+        width: 14rem;
+    }
+
+    .registro__enlace {
+        width: auto;
+    }
+
+    .registro__datos {
+        margin-bottom: 3rem;
+        margin-top: -10rem;
+    }
+    /*END REGISTRO*/
+
+    /*FOOTER*/
+    .footer > .container {
+        margin-top: -5rem;
+    }
+
+    .footer__submenus {
+        flex-direction: column;
+    }
+
+    .submenu__link, .submenu__titulo {
+        text-align: center;
+    }
+
+    .footer__empresa {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__logo {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .footer__login-registro {
+        text-align: center;
+    }
+
+    .footer__linea {
+        margin-top: -2rem;
+    }
+    /*END FOOTER*/
+}

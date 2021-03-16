@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscador</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <p>
+        <input id="buscador" type="search" value=""/>
+    </p>
+    <p id="boton-filtro">
+    <div id="trabajos"></div>
+
+    <template id="plantillaBotonFiltro">
+        <button class="button"></button>
+    </template>
+
+    <template id="plantillaTrabajo">
+        <div class="trabajo">
+            <h2 class="trabajo__titulo"></h2>
+            <p>
+                <img src="" alt="" class="trabajo__imagen">
+            </p>
+            <p class="trabajo__categoria"></p>
+            <p class="trabajo__descripcion"></p>
+        </div>
+    </template>
+</body>
+</html>

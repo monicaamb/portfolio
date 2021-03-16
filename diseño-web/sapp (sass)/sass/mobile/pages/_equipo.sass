@@ -1,0 +1,55 @@
+.equipo
+  .miembros
+    &__titulo
+      margin-top: 6rem
+      text-align: center
+  .fichas
+    &__item
+      background-size: cover
+      display: flex
+      justify-content: center
+      align-items: center
+      position: relative
+      flex-direction: column
+      color: $color_blanco
+      padding: 3rem 1.5rem
+      margin-bottom: 2rem
+      z-index: 0
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: transparentize($popstar, .3)
+        z-index: -1
+      &--jefe
+        background-image: url(../img/equipo/boss.jpg)
+      &--frontend
+        background-image: url(../img/equipo/front.jpg)
+      &--backend
+        background-image: url(../img/equipo/back.jpg)
+      &--copywriter
+        background-image: url(../img/equipo/copy.jpg)
+      &--uiux
+        background-image: url(../img/equipo/ux.jpg)
+      &--mascota
+        background-image: url(../img/equipo/mascot.jpg)
+    &__nombre
+      margin: 0
+    &__cargo
+      margin: .5rem
+    &__social
+      display: flex
+      width: 100%
+      justify-content: space-around
+      list-style: none
+      padding: 0
+      margin: 0
+    &__link
+      display: block
+      width: 1rem
+      height: 1rem
+

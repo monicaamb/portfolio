@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>21 y medio</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+    <style>
+        body { text-align: center; }
+    </style>
+</head>
+<body class="nes-text">
+<h1>21 y medio</h1>
+<p>Puntos: <span class="nes-text is-primary" id="puntos">0</span></p>
+<p>
+    <button class="nes-btn is-primary" id="pedir">Pedir carga</button>
+</p>
+<script>
+    // Variables
+    const cartas = [
+        1, 2, 3, 4, 5, 6, 7, 0.5, 0.5, 0.5,
+        1, 2, 3, 4, 5, 6, 7, 0.5, 0.5, 0.5,
+        1, 2, 3, 4, 5, 6, 7, 0.5, 0.5, 0.5,
+        1, 2, 3, 4, 5, 6, 7, 0.5, 0.5, 0.5
+    ];
+    let cartasMezcladas = _.shuffle(cartas);
+    let mano = [];
+    const puntos = document.querySelector('#puntos');
+    const pedir = document.querySelector('#pedir');
+    const limite1 = 21;
+    const limite2 = 21.5;
+
+    // Funciones
+
+    function resetearJuego() {
+        cartasMezcladas = _.shuffle(cartas);
+        mano = [];
+    }
+
+    function sacarCarta() {
+        // Saco una carta
+        const nuevaCarta = cartasMezcladas[0];
+        // La dejo en mi mano
+        mano = mano.concat(nuevaCarta);
+        // Borro la carta de cartasMecladas
+        cartasMezcladas = cartasMezcladas.slice(1);
+        // Imprimir
+        imprimir();
+    }
+
+    function calcularPuntos() {
+        return _.sum(mano);
+    }
+
+    function hasGanado() {
+        const gana = calcularPuntos() === limite1 || calcularPuntos() === limite2;
+        return gana;
+    }
+
+    function hasPerdido() {
+        return calcularPuntos() > limite2;
+    }
+
+    function imprimir() {
+        // Muestro puntos
+        const puntosTotales = calcularPuntos();
+        puntos.textContent = puntosTotales;
+
+        // Muestro si ha ganado o perdido
+        if(hasGanado()) {
+            alert('Has ganado');
+            resetearJuego();
+        } else if(hasPerdido()) {
+            alert('Has perdido');
+            resetearJuego();
+        }
+    }
+
+    // Eventos
+    pedir.addEventListener('click', sacarCarta);
+</script>
+</body>
+</html>

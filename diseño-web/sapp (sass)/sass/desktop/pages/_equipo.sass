@@ -1,0 +1,87 @@
+.equipo
+  .miembros
+    &__titulo
+      margin-top: 6rem
+      text-align: center
+    &__texto
+      font-size: 1.2rem
+  .fichas
+    display: grid
+    grid-template-columns: 2fr repeat(2, 1fr)
+    grid-template-rows: repeat(3, 1fr)
+    grid-gap: 1rem
+    margin: 4rem 0
+    &__item
+      background-size: auto 100%
+      background-position: center
+      display: flex
+      justify-content: center
+      align-items: center
+      position: relative
+      flex-direction: column
+      padding: 3rem 1.5rem
+      z-index: 0
+      color: transparent
+      transition: 1s
+      &:hover
+        color: $color_blanco
+        background-size: auto 150%
+        &::before
+          transform: scale(1)
+        .fichas__img-social
+          opacity: 1
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        transform: scale(0)
+        transition: 1s
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: transparentize($popstar, .3)
+        z-index: -1
+      &--jefe
+        background-image: url(../img/equipo/boss.jpg)
+        grid-column: 1 / 2
+        grid-row: 1 / 4
+      &--frontend
+        background-image: url(../img/equipo/front.jpg)
+        grid-column: 2 / 3
+        grid-row: 1 / 2
+      &--backend
+        background-image: url(../img/equipo/back.jpg)
+        grid-column: 3 / 4
+        grid-row: 1 / 2
+      &--copywriter
+        background-image: url(../img/equipo/copy.jpg)
+        grid-column: 2 / 3
+        grid-row: 2 / 3
+      &--uiux
+        background-image: url(../img/equipo/ux.jpg)
+        grid-column: 3 / 4
+        grid-row: 2 / 3
+      &--mascota
+        background-image: url(../img/equipo/mascot.jpg)
+        grid-column: 2 / 4
+        grid-row: 3 / 4
+    &__nombre
+      margin: 0
+    &__cargo
+      margin: .5rem
+    &__social
+      display: flex
+      width: 100%
+      justify-content: center
+      grid-gap: 1rem
+      list-style: none
+      padding: 0
+      margin: 0
+    &__link
+      display: block
+      width: 1rem
+      height: 1rem
+    &__img-social
+      opacity: 0
+      transition: 1s

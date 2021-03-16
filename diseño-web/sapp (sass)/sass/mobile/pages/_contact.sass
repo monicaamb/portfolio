@@ -1,0 +1,66 @@
+.contacto
+  .form
+    font-size: 1.2rem
+    &__lista
+      list-style: none
+      padding: 0
+      margin: 0
+    &__titulo
+      margin-top: 6rem
+      text-align: center
+    &__item
+      display: flex
+      align-items: center
+      grid-gap: 1rem
+      margin: 1rem 0
+      &::before
+        $size: 3rem
+        content: ''
+        display: block
+        background:
+          color: $popstar
+          position: center center
+          size: 70% auto
+          repeat: no-repeat
+        width: $size
+        height: $size
+        border-radius: .3rem
+      &--house
+        &::before
+          background:
+            image: url(../img/contacto/location.png)
+      &--phone
+        &::before
+          background-image: url(../img/contacto/call.png)
+      &--email
+        &::before
+          background-image: url(../img/contacto/email.png)
+    &__link
+      display: block
+      text-decoration: none
+      color: $popstar
+    &__input, &__textarea
+      padding: .3rem
+      border: 0
+      font-size: 1.2rem
+      width: 100%
+      box-shadow: 4px 4px 9px 0 transparentize($color_negro, .8)
+      box-sizing: border-box
+      &__focus
+        outline: 0
+    &__submit
+      background-color: $popstar
+      display: flex
+      align-items: center
+      justify-content: center
+      grid-gap: .5rem
+      color: $color_blanco
+      text-align: center
+      width: 100%
+      padding: 1rem 0
+      border: 0
+      border-radius: .5rem
+      &-img
+        width: 1rem
+    &__label
+      font-size: 1rem

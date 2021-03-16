@@ -1,0 +1,48 @@
+@media all and (max-width: 600px) {
+
+    .portfolio > .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto {
+        display: none;
+    }
+
+    .foto-byn {
+        height: 65vh;
+        object-fit: cover;
+
+    }
+
+    .portfolio__fecha {
+        text-align: center;
+    }
+
+    .portfolio__documentos {
+        position: absolute;
+        top: 0;
+        left: 12rem;
+        font-size: 1.1rem;
+        text-align: right;
+    }
+
+    .portfolio__carta {
+        color: darkred;
+    }
+
+    .portfolio__curriculum {
+        color: darkred;
+    }
+
+    .portfolio__clip {
+        width: 1.5rem;
+    }
+
+    .portfolio__contenido {
+        flex-direction: column;
+    }
+    .portfolio__contenido-webs {
+        margin: 1rem;
+    }
+}
